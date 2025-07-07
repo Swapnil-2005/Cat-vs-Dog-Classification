@@ -1,23 +1,50 @@
 # Cat-vs-Dog-Classification
-🐱🐶 A CNN-based binary image classifier built using TensorFlow to distinguish between cats and dogs. Achieves ~80.58% validation accuracy on the Kaggle Dogs vs Cats dataset. Includes training plots, confusion matrix, and prediction support for custom images.
-🐱🐶 Cat vs Dog Image Classifier using CNN
-This project is a binary image classification model built using TensorFlow and Keras to distinguish between cats and dogs. It uses a custom Convolutional Neural Network (CNN) trained on the Kaggle Dogs vs Cats dataset. The model achieves around 80.58% validation accuracy and handles overfitting using batch normalization, dropout, and early stopping techniques.
+🐱🐶 Cat-vs-Dog-Classification (91 % accuracy)
+
+A CNN-based binary image classifier built using TensorFlow to distinguish between cats and dogs. The project explores different model architectures and techniques to improve classification accuracy on the Kaggle Dogs vs Cats dataset. It includes training plots, confusion matrices, and prediction support for custom images.
+
+📌 Approaches & Accuracy:
+
+✅ Transfer Learning: Achieved ~91.27% validation accuracy.
+
+🛠 Custom CNN (Manual): Achieved ~80.58% validation accuracy.
+
+🚫 Without Data Augmentation: Validation performance observed with basic preprocessing (lower accuracy).
+
 
 ✅ Features:
-Built with a custom CNN architecture (3 Conv layers + FC layers)
 
-Handles image preprocessing and normalization
+Built using both custom CNN architecture (3 Conv layers + FC layers) and transfer learning (e.g., VGG, ResNet).
 
-Implements early stopping to prevent overfitting
+Handles image preprocessing, normalization, and data augmentation.
 
-Includes training history plots and confusion matrix visualization
+Implements early stopping, batch normalization, and dropout to prevent overfitting.
 
-Uses sklearn for metrics like accuracy, classification report, and confusion matrix
+Includes training history plots, confusion matrix, and performance visualization.
+
+Uses sklearn for metrics like accuracy, classification report, and confusion matrix.
 
 📊 Performance:
-Validation Accuracy: ~80.58%
 
-Balanced performance on both cat and dog classes
+Best Validation Accuracy: ~91.27% (Transfer Learning)
+
+Custom CNN Validation Accuracy: ~80.58%
+
+Balanced classification across both cat and dog classes
+
+📁 Notebooks Included:
+
+1. cat_vs_dog_dataaugmentation.ipynb – Training with data augmentation using a custom CNN
+
+
+2. cat_vs_dog_transferlearning.ipynb – Training using transfer learning (e.g., VGG, ResNet)
+
+
+3. cat_vs_dog_w/o_dataaugmentation.ipynb – Training without data augmentation
+
+
+
+
 
 Visual tools for analyzing model performance
 kaggle dataset link:https://www.kaggle.com/datasets/salader/dogs-vs-cats
